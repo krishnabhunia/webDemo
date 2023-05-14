@@ -1,0 +1,16 @@
+<html>
+<SCRIPT LANGUAGE="JavaScript">
+function Test()
+{
+var win =
+window.open("./test2.html","sale","menubar=no,scroll bars=no,width=780,height=5
+40,top=0,left=0")
+window.opener = "OPENER_IS_NOT_NULL";
+window.close();
+}
+
+</SCRIPT>
+<body>
+<input id="ttt" type="button" value = "Click" onClick="Test()">
+</body>
+</html>

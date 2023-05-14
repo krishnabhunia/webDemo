@@ -1,0 +1,48 @@
+
+
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript1.1">
+<!-- Original:  Martin Webb (martin@irt.org) -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+function right(e) {
+if (navigator.appName == 'Netscape' && 
+(e.which == 3 || e.which == 2))
+return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && 
+(event.button == 2 || event.button == 3)) {
+alert("Sorry, you do not have permission to right click.");
+return false;
+}
+return true;
+}
+
+document.onmousedown=right;
+document.onmouseup=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+if (document.layers) window.captureEvents(Event.MOUSEUP);
+window.onmousedown=right;
+window.onmouseup=right;
+//  End -->
+</script>
+</HEAD>
+
+<!-- STEP TWO: Copy this code into the BODY of your HTML document  -->
+
+<BODY>
+
+<center>[ Try right-clicking the image and then the text link below ]
+<p>
+<img src="http://javascript.internet.com/img/tjsbutton.gif">
+<p>
+<a href="http://javascript.internet.com">Text Link</a>
+
+<p><center>
+<font face="arial, helvetica" size="-2">Free JavaScripts provided<br>
+by <a href="http://javascriptsource.com">The JavaScript Source</a></font>
+</center><p>
+

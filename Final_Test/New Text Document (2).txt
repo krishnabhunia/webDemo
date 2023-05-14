@@ -1,0 +1,45 @@
+<SCRIPT LANGUAGE="JavaScript1.1">
+
+<!-- Begin
+function right(e) {
+if (navigator.appName == 'Netscape' && 
+(e.which == 3 || e.which == 2))
+return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && 
+(event.button == 2 || event.button == 3)) {
+alert("Hey This is Subodh ! Ha ha !");
+return false;
+}
+return true;
+}
+
+document.onmousedown=right;
+document.onmouseup=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+if (document.layers) window.captureEvents(Event.MOUSEUP);
+window.onmousedown=right;
+window.onmouseup=right;
+//  End -->
+</script>
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+
+<script language="JavaScript"> 
+var message="Ha ha this is subodh !";
+function click(e) {
+	if(document.all) {
+		if (event.button == 2) {
+			alert(message);
+			return false;
+		}
+	}else if(document.layers || document.getElementById){
+		if (e.which==2||e.which==3){
+			alert(message);
+			return false;
+		}
+	}
+}
+if (document.layers) {
+	document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=click;
+// --> </script>
